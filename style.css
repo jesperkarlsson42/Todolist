@@ -9,13 +9,11 @@
     flex-direction: column;
  }
 
- 
-
  #userbtn {
      background-color: white;
      border: none;
      height: 25px;
-     margin: 0px;
+     margin: 1px;
      padding: 0px;
      width: 25px;
      color: #4a0072;
@@ -104,7 +102,10 @@
     border: none;
     cursor: pointer;
     font-size: 22px;
-   
+    margin: 1px;
+    align-items: right;
+    justify-content: right;
+    color: white;
 }
 
 #sorting:hover {
@@ -122,6 +123,7 @@
 .checkBtn{
     height: 100%;
     align-items: center;
+    margin: 1px;
 }
 
 #text {
@@ -129,12 +131,6 @@
     font-weight: bold;
     color: #4cc9f0;
     font-family: 'Anton', sans-serif;
-}
-
-#sorting {
-    align-items: right;
-    justify-content: right;
-    color: white;
 }
 
 .trashbtn {
@@ -149,6 +145,7 @@
     color: #4a0072;
     border: none;
     cursor: pointer;
+    margin: 1px;
 }
 
 .doneTrash {
@@ -156,6 +153,7 @@
     color: #4a0072;
     border: none;
     cursor: pointer;
+    margin: 1px;
 }
 
 .error::placeholder {
