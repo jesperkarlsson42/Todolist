@@ -28,21 +28,7 @@ window.onload = function () {
 
 };
 
-/*function onClickRestoreBtn() {
-    let removedTodosFromLs = localStorage.getItem('removedTodos');
-    let restoredTasks = JSON.parse(removedTodosFromLs);
-    for (let i = 0; i < restoredTasks.length; i++) {
-        
-    }
-
-    localStorage.clear();
-};*/
-
-
-
 function createTodo() {
-
-
 
     let newTodo = document.getElementById("userInput").value;
     let todo = new Todo(newTodo);
@@ -139,7 +125,6 @@ function moveBackFunction(todo) {
 };
 
 function removeCheckedTodo(todo) {
-    // let completedUl = document.getElementById('completedUl');
 
     for (let i = 0; i < completedList.length; i++) {
         if (completedList[i].id == todo.id) {
@@ -152,7 +137,6 @@ function removeCheckedTodo(todo) {
 
 
 function removeTodo(todo) {
-    // let ulList = document.getElementById('ulTag');
 
     for (let i = 0; i < todos.length; i++) {
         if (todos[i].id == todo.id) {
@@ -249,7 +233,6 @@ function creatingInputHtml() {
             theInput.placeholder = 'Cannot be empty!';
             theInput.className = 'error';
         }
-
         else {
             createTodo();
         }
@@ -263,7 +246,6 @@ function creatingInputHtml() {
     let completedUl = document.createElement('ul');
     completedUl.id = 'completedUl';
     container.appendChild(completedUl);
-
 
     sorting.addEventListener('click', sortingFunction);
 };
